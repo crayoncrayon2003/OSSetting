@@ -24,3 +24,21 @@ sudo vim /etc/systemd/system/docker.service.d/override.conf
 [Service]
 Environment="HTTP_PROXY=http://user:pass@ProxyIP:ProxyPort/" "HTTPS_PROXY=http://user:pass@ProxyIP:ProxyPort/" "NO_PROXY=localhost,127.0.0.1"
 ```
+
+# Docker Network
+Change the network address of the Docker network
+
+Create daemon.json
+```
+mkdir ~/.docker
+sudo vim /etc/docker/daemon.json
+```
+
+Add the following
+```
+{
+    ...
+    "bip": "192.20.0.254/24"
+    ...
+}
+```
