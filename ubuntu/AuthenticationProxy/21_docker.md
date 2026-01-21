@@ -46,7 +46,7 @@ sudo vim ~/.docker/config.json
 ```
 
 # Docker Inbound Settings
-[ref](https://github.com/crayoncrayon2003/OSSetting/tree/main/win/21_docker.md)
+[https://github.com/crayoncrayon2003/OSSetting/blob/main/win/AuthenticationProxy/21_docker.md](https://github.com/crayoncrayon2003/OSSetting/blob/main/win/AuthenticationProxy/21_docker.md)
 
 # Docker Network  Settings
 Change the network address of the Docker network.

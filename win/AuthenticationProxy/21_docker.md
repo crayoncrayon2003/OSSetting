@@ -1,5 +1,5 @@
 # Docker Outbound Settings
-[ref](https://github.com/crayoncrayon2003/OSSetting/blob/main/ubuntu/AuthenticationProxy/21_docker.md)
+[https://github.com/crayoncrayon2003/OSSetting/blob/main/ubuntu/AuthenticationProxy/21_docker.md](https://github.com/crayoncrayon2003/OSSetting/blob/main/ubuntu/AuthenticationProxy/21_docker.md)
 
 # Docker Inbound Settings
 ## Step1
