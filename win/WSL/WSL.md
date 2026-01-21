@@ -3,6 +3,7 @@ C:/Users/'username'/.wslconfig
 
 ```
 [wsl2]
+localhostForwarding=true
 memory=4GB
 swap=0
 ```
