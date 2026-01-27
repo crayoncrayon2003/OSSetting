@@ -25,6 +25,10 @@ export FTP_PROXY=http://user:pass@ProxyIP:ProxyPort/
 export NO_PROXY=localhost,127.0.0.1
 ```
 
+```
+source ~/.bashrc
+```
+
 # Environment
 ```
 sudo vim /etc/profile.d/proxy.sh
