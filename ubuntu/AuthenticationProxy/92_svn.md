@@ -1,10 +1,10 @@
 # svn
-```
-sudo vim ~/.subversion/servers
+```bash
+vim ~/.subversion/servers
 ```
 
 Search for "[global]" in the files.
-```
+```ini
 [global]
 http-proxy-host = ProxyIP
 http-proxy-port = ProxyPort

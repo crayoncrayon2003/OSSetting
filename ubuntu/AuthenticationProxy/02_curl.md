@@ -1,7 +1,8 @@
 # curl
+```bash
+vim ~/.curlrc
 ```
-sudo vim ~/.curlrc
-```
-```
+
+```bash
 proxy="http://user:pass@ProxyIP:ProxyPort/"
 ```

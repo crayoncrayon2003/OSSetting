@@ -1,8 +1,9 @@
 # apt
+```bash
+sudo vim /etc/apt/apt.conf.d/80proxy
 ```
-sudo vim /etc/apt/apt.conf
-```
-```
+
+```bash
 Acquire::http::Proxy "http://user:pass@ProxyIP:ProxyPort/";
 Acquire::https::Proxy "http://user:pass@ProxyIP:ProxyPort/";
 ```

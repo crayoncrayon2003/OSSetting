@@ -1,8 +1,9 @@
 # wget
+```bash
+vim ~/.wgetrc
 ```
-sudo vim /etc/wgetrc
-```
-```
+
+```bash
 http_proxy = http://user:pass@ProxyIP:ProxyPort/
 https_proxy = http://user:pass@ProxyIP:ProxyPort/
 ftp_proxy = http://user:pass@ProxyIP:ProxyPort/

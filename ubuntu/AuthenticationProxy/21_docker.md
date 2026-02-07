@@ -1,39 +1,24 @@
 # Docker Outbound Settings
 ## case1
-```
-sudo vim /etc/default/docker
-```
-```
-export http_proxy="http://user:pass@ProxyIP:ProxyPort/"
-export https_proxy="http://user:pass@ProxyIP:ProxyPort/"
-export ftp_proxy="http://user:pass@ProxyIP:ProxyPort/"
-export no_proxy="localhost,127.0.0.1,HostNetwork,DockerNetwork"
-
-export HTTP_PROXY="http://user:pass@ProxyIP:ProxyPort/"
-export HTTPS_PROXY="http://user:pass@ProxyIP:ProxyPort/"
-export FTP_PROXY="http://user:pass@ProxyIP:ProxyPort/"
-export NO_PROXY="localhost,127.0.0.1,HostNetwork,DockerNetwork"
-```
-
-## case2
-```
+```bash
 sudo mkdir -p /etc/systemd/system/docker.service.d
-sudo vim /etc/systemd/system/docker.service.d/override.conf
+sudo vim /etc/systemd/system/docker.service.d/http-proxy.conf
 ```
 
-```
+```ini
 [Service]
 Environment="HTTP_PROXY=http://user:pass@ProxyIP:ProxyPort/"
 Environment="HTTPS_PROXY=http://user:pass@ProxyIP:ProxyPort/"
 Environment="NO_PROXY=localhost,127.0.0.1,HostNetwork,DockerNetwork"
 ```
 
-## case3
-```
-sudo vim ~/.docker/config.json
+## case2
+```bash
+mkdir -p ~/.docker
+vim ~/.docker/config.json
 ```
 
-```
+```json
 {
   "proxies": {
     "default": {
@@ -53,13 +38,13 @@ Change the network address of the Docker network.
 This setting is used to avoid conflicts with the host network.
 
 Create daemon.json
-```
-mkdir ~/.docker
+```bash
+sudo mkdir -p /etc/docker
 sudo vim /etc/docker/daemon.json
 ```
 
 Add the following
-```
+```json
 {
     ...
     "bip": "192.20.0.254/24"

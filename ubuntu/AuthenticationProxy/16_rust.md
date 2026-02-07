@@ -1,9 +1,13 @@
 # rust
-```
-sudo vim ~/.cargo/config
+```bash
+mkdir -p ~/.cargo
+vim ~/.cargo/config.toml
 ```
 
-```
+```toml
 [http]
-proxy = "http://registry.npmjs.com/"
+proxy = "http://user:pass@ProxyIP:ProxyPort/"
+
+[https]
+proxy = "http://user:pass@ProxyIP:ProxyPort/"
 ```
